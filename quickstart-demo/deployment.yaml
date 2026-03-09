@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx
 spec:
-  replicas: 3
+  replicas: "not-a-number"
   selector:
     matchLabels:
       run: nginx
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nonexistent-image:does-not-exist
+        image: nginx
         ports:
           - containerPort: 80
-        # imagePullPolicy: IfNotPresent
+        imagePullPolicy: IfNotPresent
