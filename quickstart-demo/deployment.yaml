@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx
   annotations:
-    notifications.argoproj.io/subscribe.sync-operation-change.gmail: nathan.wagacha@savannahinformatics.com
+    notifications.argoproj.io/subscribe.sync-operation-change.gmail: "nathan.wagacha@savannahinformatics.com"
 spec:
   replicas: 3
   selector:
