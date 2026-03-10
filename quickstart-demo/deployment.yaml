@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
+  notifications.argoproj.io/subscribe.sync-operation-change.gmail: nathan.wagacha@savannahinformatics.com
 spec:
   replicas: 3
   selector:
